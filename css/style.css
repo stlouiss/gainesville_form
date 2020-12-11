@@ -1,0 +1,143 @@
+body {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  background-color: #F5F6F6;
+}
+
+legend{ 
+  font-size: 125%;
+  font-style: normal;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=checkbox]{
+  margin-left: 2%;
+  display:inline-block;  
+  width: inherit;
+}
+
+input[type=submit] {
+  background-color: #059393;
+  color: #FFF3D3;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.parallax-img{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  background-attachment: fixed;    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+  margin-left: auto;
+  margin-right: auto; 
+  color: white; 
+  width: 100%;
+  height: 500px;
+  background-image: url("../imgs/Gainesville_Clock_Tower_DouglasGreen~commonswiki.png");        
+  grid-column: 1 / -1;
+  grid-row: 1 / auto; 
+}
+
+.parallax-p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 42pt;
+  -webkit-text-stroke-width: 2px;     /* Text outlining idea from https://css-tricks.com/adding-stroke-to-web-text/ (accessed November 7, 2020) */
+  -webkit-text-stroke-color: #000000;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#logo-img{
+  margin: 10px;
+  width: 35%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+#checkbox-label{
+  margin-left: 2%;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
+}
